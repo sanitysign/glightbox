@@ -17,6 +17,7 @@ const html = document.getElementsByTagName('html')[0];
 
 const defaults = {
     selector: '.glightbox',
+    parent: document,
     elements: null,
     skin: 'clean',
     theme: 'clean',
@@ -142,6 +143,7 @@ class GlightboxInit {
         if (selector) {
             this.baseEvents = _.addEvent('click', {
                 onElement: selector,
+                parent: this.settings.parent,
                 withCallback: (e, target) => {
                     e.preventDefault();
                     this.open(target);
@@ -852,7 +854,7 @@ class GlightboxInit {
         let selector = this.getSelector();
 
         if (selector) {
-            nodes = document.querySelectorAll(this.getSelector());
+            nodes = this.settings.parent.querySelectorAll(this.getSelector());
         }
 
         if (!nodes) {

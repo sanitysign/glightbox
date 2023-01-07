@@ -97,12 +97,12 @@ export function getNodeEvents(node, name = null, fn = null) {
  * Add an event listener
  *
  * @param {string} eventName
- * @param {object} detials
+ * @param {object} details
  */
-export function addEvent(eventName, { onElement, withCallback, avoidDuplicate = true, once = false, useCapture = false } = {}, thisArg) {
+export function addEvent(eventName, { onElement, withCallback, avoidDuplicate = true, once = false, useCapture = false, parent = document } = {}, thisArg) {
     let element = onElement || [];
     if (isString(element)) {
-        element = document.querySelectorAll(element);
+        element = parent.querySelectorAll(element);
     }
 
     function handler(event) {
