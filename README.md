@@ -1,5 +1,9 @@
 # GLightbox
 
+This is a fork of [glightbox](https://www.npmjs.com/package/glightbox) library. All credits to its authors.
+
+Added support for `parent` option, which allows to specify custom HTMLElement instead of `document` where `selector` will be searched.
+
 GLightbox is a pure javascript lightbox. It can display images, iframes, inline content and videos with optional autoplay for YouTube, Vimeo and even self hosted videos.
 
 ## Features

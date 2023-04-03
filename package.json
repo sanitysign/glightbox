@@ -1,5 +1,5 @@
 {
-  "name": "glightbox",
+  "name": "@sanitysign/glightbox",
   "version": "3.2.0",
   "description": "Pure Javascript lightbox",
   "main": "dist/js/glightbox.min.js",
@@ -16,7 +16,7 @@
   "license": "MIT",
   "homepage": "https://biati-digital.github.io/glightbox/",
   "repository": {
-    "url": "https://github.com/biati-digital/glightbox",
+    "url": "https://github.com/sanitysign/glightbox",
     "type": "git"
   },
   "bugs": "https://github.com/biati-digital/glightbox/issues",
